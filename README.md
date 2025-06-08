@@ -15,3 +15,7 @@
 
 Addtional -
 . added hero icons for (VIEW MORE) , (EDIT) , (DELETE)
+
+## 🔗 GitHub Repository Link
+
+[Click here to view the repository] : (https://github.com/nitin-jpg/student-reg-form )
