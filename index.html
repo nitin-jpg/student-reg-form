@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Heroicons -->
+    <script
+      src="https://unpkg.com/@heroicons/vue@2.0.13/24/outline/index.js"
+      defer
+    ></script>
+    <style>
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-100 to-indigo-200 min-h-screen py-10 px-4"
+  >
+    <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+      <header class="mb-6 text-center">
+        <h1 class="text-3xl font-bold text-indigo-700">
+          Student Registration System
+        </h1>
+        <p class="text-gray-600 mt-1">
+          Register and manage student details efficiently.
+        </p>
+      </header>
+
+      <form id="studentForm" class="space-y-4 mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input
+            type="text"
+            id="name"
+            placeholder="Student Name"
+            class="p-2 border rounded w-full"
+            required
+          />
+          <input
+            type="text"
+            id="studentId"
+            placeholder="Student ID"
+            class="p-2 border rounded w-full"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email ID"
+            class="p-2 border rounded w-full"
+            required
+          />
+          <input
+            type="text"
+            id="contact"
+            placeholder="Contact No"
+            class="p-2 border rounded w-full"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
+        >
+          Add Student
+        </button>
+      </form>
+
+      <div id="studentList" class="space-y-4 overflow-y-auto max-h-96"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
